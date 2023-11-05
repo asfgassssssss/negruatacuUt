@@ -51,6 +51,8 @@ def kub(request):
     return render(request,'XJIe6/OMG3.html')
 
 
+def animales(request):
+    return render(request,'XJIe6/animales.html')
 
 
 
