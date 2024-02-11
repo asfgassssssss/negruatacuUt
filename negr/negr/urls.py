@@ -17,12 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from XJIe6.views import page_not_found, page, page403
+from XJIe6.views import page_not_found, page403
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('XJIe6.urls')),
+
 ]
 handler404 = page_not_found
-handler500 = page
+
 handler403 = page403
+
+
+admin.site.site_header = 'Негры тоже люди'
+admin.site.index_title = 'Свободу неграм в Сингапуре'

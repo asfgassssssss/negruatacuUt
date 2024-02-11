@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{post.BooksName}}</h1>
+<h2>{{post.Author}},{{post.DateOfBirth}}</h2>
+
+<h3>{{post.Summary}}</h3>
+{{post.content|linebreaks}}
+{% endblock %}
